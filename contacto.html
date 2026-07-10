@@ -2,28 +2,65 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deadpool - Contacto</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
-  <header>
+    <header>
         <h1>Deadpool</h1>
         <nav>
-           <ul>
+            <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="sobre.html">Sobre la Película</a></li>
                 <li><a href="reparto.html">Reparto</a></li>
                 <li><a href="produccion.html">Producción</a></li>
                 <li><a href="curiosidades.html">Curiosidades</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-           </ul>
+            </ul>
         </nav>
     </header>
 
     <main>
-      <h2>Contacto</h2>
+        <h2>Contacto</h2>
+        
         <section>
             <p>Dejanos tu comentario o consulta sobre la película:</p>
+            
+            <form action="confirmacion.html" method="post">
+                <fieldset>
+                    <legend><span>Formulario de Consulta</span></legend>
+                    
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Wade" autocomplete="off">
+                    </p>
+
+                    <p>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required placeholder="Ej: Wilson" autocomplete="off">
+                    </p>
+
+                    <p>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="wade@mercenario.com" autocomplete="off">
+                    </p>
+
+                    <p>
+                        <label for="mensaje">Mensaje o Consulta:</label>
+                        <textarea id="mensaje" name="mensaje" required placeholder="Escribí acá tu comentario sobre la película..."></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar Mensaje</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
             <h3>Redes Sociales Oficiales</h3>
             <ul>
                 <li><a href="https://www.instagram.com/deadpoolmovie/" target="_blank">Instagram Oficial</a></li>
@@ -31,6 +68,7 @@
             </ul>
         </section>
     </main>
+
     <footer>
         <p>Desarrollado por Tomás Bonanata - Programación Web 1 - Da Vinci 2026</p>
     </footer>
